@@ -1,0 +1,251 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: #666;
+}
+
+header {
+  background-color: #007BFC;
+  border-radius: 20px;
+  color: #fff;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  align-items: flex-start; /* Изменили выравнивание на flex-start */
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(0.3, 0, 0, 0.3);
+}
+
+.title-container {
+  text-align: center; /* Выравнивание заголовка по левому краю */
+}
+
+.logo {
+  width: 200px;
+  text-align: left;
+  margin-bottom: 10px; /* Добавили отступ снизу для создания промежутка между логотипом и текстом */
+}
+.avatar {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+ .d_form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        padding-top:40px;
+        padding-bottom:40px;
+        border-radius: 20px;
+        font-size: 16px;
+        margin: 0;
+        border: 1px solid #dbdbdb;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    }
+
+
+.form_input {
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.form_row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+
+label {
+        display: inline-block;
+
+    }
+
+.inline-block {
+    display:inline-block;
+}
+
+
+
+input[name="phone_number"] {
+    width: 275px;
+    height: 50px;
+}
+
+input[name="email"] {
+    width: 275px;
+    height: 50px;
+}
+
+input[name="year_of_construction"] {
+    width: 560px;
+    height: 50px;
+}
+
+
+input[name="living_space"] {
+    width: 560px;
+    height: 50px;
+}
+
+
+input[name="rooms_count"] {
+    width: 560px;
+    height: 50px;
+}
+
+input[name="floor"] {
+    width: 275px;
+    height: 50px;
+}
+
+input[name="floor_count"] {
+    width: 275px;
+    height: 50px;
+}
+
+input[type="text"] {
+        width: 560px;
+        height: 50px;
+    }
+
+input[type="submit"] {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 50px;
+        background-color: #007BFC;
+        color: #fff;
+    }
+
+
+input[type="submit"]:hover {
+    background-color:rgb(0 0 255) ;
+}
+
+.score {
+    width: 560px;
+    height: 200px;
+    background-color:#007BFC;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.price {
+    font-size: 20px;
+}
+
+
+.form_container {
+  max-width: 300px;
+  padding: 20px;
+}
+footer {
+  background-color: #007BFC;
+  padding: 20px;
+  color: #fff;
+  text-align: left;
+  border-top: 4px bold #ccc;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0.3, 0, 0, 0.3);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-info,
+.quick-links,
+.social-media {
+  flex: 1;
+  margin-left:80px;
+}
+
+.social-media ul,
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media ul li,
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
+.social-media ul li a,
+.quick-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-media ul li a:hover,
+.quick-links ul li a:hover {
+  color: #000;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.copyright {
+  background-color: #fff;
+  font-size:10px;
+  padding: 10px;
+  margin-top: 20px;
+  color:#000;
+}
+
+.again {
+    width:100%;
+    height:50px;
+    color:#fff;
+    background-color: #007BFC;
+}
+
+.again:hover {
+    background-color:blue;
+    color:#000;
+}
+
+

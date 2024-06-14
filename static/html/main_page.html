@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="main_text">
+  <h1>Оценка стоимости квартиры</h1>
+  <h2>Узнайте стоимость квартиры прямо сейчас</h2>
+  <br>
+  <div class="d_form">
+    <form action="{% url 'main_page' %}" method="post">
+      {% csrf_token %}
+      {% for f in form %}
+      <div class="form_row {% if f.name in field_names %}inline-block{% endif %}">
+        <label for="{{ f.id_for_label }}"></label>
+        {{ f }}
+      </div>
+      {% endfor %}
+
+      <button type="submit" id="submit" class="btn btn-primary btn-lg">
+        Узнать стоимость квартиры
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="modal fade" id="priceModal" tabindex="-1" aria-labelledby="priceModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="priceModalLabel">
+
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <p id="priceValue"></p>
+        <p id="priceValue2"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  {% if score %}
+  // Открываем модальное окно с рассчитанной ценой при наличии значения score
+  let priceModal = new bootstrap.Modal(document.getElementById("priceModal"));
+
+  let priceValue = document.getElementById("priceValue");
+  priceValue.textContent = "Цена: " + "{{ score }}" + " ₽ за квадратный метр. Общая стоимость квартиры: " + "{{ full_price }}" + " ₽";
+
+  priceModal.show();
+  {% endif %}
+</script>
+{% endblock content %}
