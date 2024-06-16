@@ -21,7 +21,7 @@ a.text {
 }
 
 header {
-  background-color: #007BFC;
+  background-color: #01579B;
   border-radius: 20px;
   color: #fff;
   margin: 0;
@@ -172,8 +172,11 @@ input[type="submit"]:hover {
   max-width: 300px;
   padding: 20px;
 }
+.btn .btn-prime {
+  background-color: #01579B;
+}
 footer {
-  background-color: #007BFC;
+  background-color: #01579B;
   padding: 20px;
   color: #fff;
   text-align: left;
