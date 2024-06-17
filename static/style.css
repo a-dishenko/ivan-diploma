@@ -191,11 +191,12 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.footer-container h3 {
+  align-items: center;
+}
 
-.company-info,
-.quick-links,
-.social-media {
-  flex: 1;
+.company-info {
+  text-align: center;
   margin-left:80px;
 }
 
@@ -238,7 +239,9 @@ p {
   margin-top: 20px;
   color:#000;
 }
-
+.copyright p {
+  margin-bottom:  0px;
+}
 .again {
     width:100%;
     height:50px;
